@@ -1,0 +1,120 @@
+body {
+    background: -webkit-linear-gradient(left, #fffeb8, #fffeb8);
+}
+
+.contact-form {
+    background: #fffeb8;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+}
+
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+
+.contact-form form {
+    padding: 12%;
+}
+
+.contact-form form .row {
+    margin-bottom: -7%;
+}
+
+.contact-form h3 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #000000;
+}
+
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnContactSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+.card {
+    box-shadow: 0 0 35px 0 rgba(154, 161, 171, 0.15);
+    border: 1px solid #e6e8eb;
+    border-radius: 27px;
+    background-color: #fffeb8;
+    margin-bottom: 20px;
+}
+
+.icon a {
+    font-size: 36px;
+}
+
+.icon-box {
+    display: flex
+}
+
+.textp {
+    margin-left: 15px;
+}
+
+.address {
+    margin-top: 15rem;
+}
+
+.line {
+    width: 100%;
+    margin: 50px 0;
+    border-top: 1px solid #e3e3e3;
+}
+
+.mleft {
+    margin-left: 18px;
+}
+
+.boxs {
+    margin-bottom: 20px;
+}
+
+.page-contact {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    background-size: cover;
+    height: 550px;
+}
+
+.textcontent {
+    padding: 265px 0;
+    color: #fffeb8;
+}
+
+.bg {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,307 @@
+/* start full-post */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.full-post {
+    height: 100%;
+    background: url(../photo/bg.jpg) no-repeat 0% 100% fixed;
+    background-size: cover;
+    margin-top: 63px;
+}
+
+.full-post .upper-all {
+    height: 100%;
+    background: linear-gradient(to right, transparent, var(--c1), var(--c1), var(--c1), var(--c1), var(--c1), var(--c1), transparent);
+    padding-top: 50px;
+}
+
+.full-post h2 {
+    margin-bottom: 100px
+}
+
+.full-post .post-book
+/*post-book*/
+
+{
+    height: 500px;
+    margin: 0 200px;
+    position: relative;
+    perspective: 2000px;
+    -webkit-perspective: 2000px;
+    -moz-perspective: 2000px;
+}
+
+.full-post .post-book .cover
+/*cover*/
+
+{
+    position: relative;
+    border-radius: 0 10px 10px 0;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    transition: .5s linear;
+    transform-origin: left;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+}
+
+.full-post .post-book .cover .img
+/*img*/
+
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 10px 10px 0;
+    width: 100%;
+    height: 500px;
+    /* background: url("../photo/iStock-804064162.jpg")no-repeat 65%; */
+    background-size: cover;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+}
+
+.full-post .post-book .cover .img .many-cover
+/*many-cover*/
+
+{
+    background: transparent;
+    height: 100%;
+    overflow: hidden;
+    padding: 50% 0;
+}
+
+.full-post .post-book .cover .img .many-cover div.one
+/*one*/
+
+{
+    width: 100%;
+    padding: 20px 35px;
+    background: #000000c9;
+    color: var(--c1);
+    overflow: hidden;
+}
+
+.full-post .post-book .cover .img div.one h3 {
+    margin: 0;
+}
+
+.full-post .post-book .cover .img div.one button {
+    background: var(--c4);
+    color: var(--c1);
+}
+
+.full-post .post-book .cover .backface
+/*backface*/
+
+{
+    height: 500px;
+    width: 100%;
+    background: #fff;
+    transform: rotatey(180deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    pointer-events: none;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+}
+
+.full-post .post-book .cover .backface .photo {
+    width: 100%;
+    height: 100%;
+    /* background: url("../photo/0126224alsh3er.jpg") no-repeat center; */
+    background-size: cover;
+    position: relative;
+}
+
+.full-post .post-book .cover .backface .photo .control {
+    width: 100%;
+    background: #000000c9;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.full-post .post-book .cover .backface .photo .control h3 {
+    color: var(--c1);
+    margin: 0;
+}
+
+.full-post .post-book .cover .backface .photo .control button {
+    background: var(--c4);
+    color: var(--c1)
+}
+
+.full-post .post-book .cover .backface .info {
+    padding: 10px
+}
+
+.full-post .post-book .page
+/*page*/
+
+{
+    position: relative;
+    margin: auto;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    width: 100%;
+    z-index: 95;
+    background: #fef4a1;
+    transition: .5s linear;
+    bottom: 500px;
+    padding: 20px;
+    overflow: scroll auto;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.full-post .more
+/*more*/
+
+{
+    margin-top: 100px;
+}
+
+.full-post .more .your-opinion {
+    margin-top: 100px
+}
+
+.full-post .more .your-opinion .message textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+}
+
+.full-post .more .your-opinion .send {
+    background: var(--c2);
+    color: var(--c1);
+}
+
+.some-comment
+/* start some-comment */
+
+{
+    overflow: hidden;
+    margin-top: 40px;
+    background: linear-gradient(to right, transparent, var(--c3), var(--c3), var(--c3), var(--c3), var(--c3), var(--c3), var(--c3), transparent)
+}
+
+.full-post h2:nth-of-type(2) {
+    margin: 90px 0 0;
+}
+
+.carousel.slide {
+    background: transparent;
+}
+
+.some-comment .carousel-inner .item {
+    background: transparent;
+    height: 350px;
+    overflow: hidden;
+}
+
+.some-comment .carousel-inner .item h3 {
+    margin-bottom: 30px;
+    color: var(--c2);
+    margin: 50px 0 20px;
+}
+
+.some-comment .carousel-inner .item p {
+    margin-bottom: 140px;
+    color: #000;
+    padding: 0 40px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.some-comment .carousel-indicators {
+    margin-left: 0;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.some-comment .carousel-indicators li {
+    opacity: .3
+}
+
+.some-comment .carousel-indicators .active {
+    background: transparent;
+    border: 3px solid var(--c2);
+    opacity: unset;
+    box-shadow: 2px 2px 3px 3px #1E2D3B50
+}
+
+.some-comment .carousel-indicators li {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    text-indent: 0;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.some-comment .carousel-indicators li img {
+    max-width: 100%;
+    height: 100%
+}
+
+.media-comment {
+    font-size: 20px;
+}
+
+.dd {
+    font-size: 12px;
+    color: #f8ff7d;
+}
+
+.bar-like {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.like {
+    color: #2196f3;
+}
+
+
+
+
+/* end some-comment */
+
+
+/* end full-post */

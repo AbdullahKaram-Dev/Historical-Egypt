@@ -1,0 +1,469 @@
+/* start global */
+
+* {
+    font-family: 'Muli', sans-serif;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bangers', cursive;
+}
+
+body,
+html {
+    color: #000;
+    position: relative;
+    z-index: 10;
+
+    /* background: var(--c2) */
+}
+
+.p-r {
+    line-height: 1.5;
+    letter-spacing: .7px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.h2-custom {
+    font-size: 34px;
+    position: relative;
+}
+
+.h2-custom::before {
+    content: "";
+    position: absolute;
+    left: calc(50% - 20px);
+    bottom: -10px;
+    width: 40px;
+    margin: auto;
+    height: 7px;
+    background: var(--c4);
+    transform: skewX(-30deg)
+}
+
+
+/* end global */
+
+
+/* start nav */
+
+nav {
+    background: var(--c2);
+    padding: 5px 0;
+    z-index: 999;
+    transition: 1s;
+}
+
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+nav .brand
+/*brand*/
+
+{
+    outline: 2px solid var(--c1);
+    padding: 0 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+nav .brand h2 {
+    margin: 0;
+    color: var(--c4)
+}
+
+nav .share
+/*share*/
+
+{
+    position: relative;
+    margin: 6px 6px 6px 150px;
+    padding: 0 10px;
+    background: transparent;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+nav .share:hover span:first-of-type {
+    opacity: 0;
+}
+
+nav .share:hover span:not(:first-of-type) {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+nav .share span:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--c2);
+    letter-spacing: .7px;
+    font-size: 16px;
+    padding-top: 10px;
+    color: var(--c1);
+    text-align: center;
+    transition: .5s;
+    font-family: 'Bangers', cursive;
+}
+
+nav .share span:not(:first-of-type) {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
+    transition: .5s;
+    opacity: 0;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+nav .share span:nth-of-type(2) {
+    transform: translateX(174%);
+}
+
+nav .share span:nth-of-type(2):hover {
+    background: #17c5ec;
+}
+
+nav .share span:nth-of-type(3) {
+    transform: translateX(50%);
+}
+
+nav .share span:nth-of-type(3):hover {
+    background: #3b5998;
+}
+
+nav .share span:nth-of-type(4) {
+    transform: translateX(-50%);
+}
+
+nav .share span:nth-of-type(4):hover {
+    background: #ea4335;
+}
+
+nav .share span:nth-of-type(5) {
+    transform: translateX(-150%);
+}
+
+nav .share span:nth-of-type(5):hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    transition: .5s;
+}
+
+nav .share span:nth-of-type(2):hover a,
+nav .share span:nth-of-type(3):hover a,
+nav .share span:nth-of-type(4):hover a,
+nav .share span:nth-of-type(5):hover a {
+    color: #fff
+}
+
+nav .share span a {
+    color: var(--c1)
+}
+
+nav .navb
+/*navb*/
+
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+nav .navb li {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 15px;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--c1);
+    font-weight: 600;
+}
+
+nav .navb li a {
+    color: inherit;
+}
+
+nav .navb li.active,
+nav .navb li:hover {
+    color: var(--c4);
+}
+
+nav .menu
+/*menu*/
+
+{
+    font-size: 30px;
+    line-height: 50px;
+    color: var(--c1);
+    cursor: pointer;
+}
+
+
+/* end nav */
+
+
+/*start Most-popular*/
+
+.Most-popular {
+    padding-bottom: 200px;
+    padding-top: 50px;
+}
+
+.Most-popular h2 {
+    margin-bottom: 70px;
+}
+
+.Most-popular .most {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 150px;
+    margin-bottom: 15px;
+    transition: .3s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.Most-popular .most:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.Most-popular .most img {
+    width: 100%;
+    height: 100%
+}
+
+.Most-popular .most .over-lay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 35px;
+    overflow: hidden;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    color: var(--c1);
+    transition: .5s;
+}
+
+.Most-popular .most:hover .over-lay {
+    height: 100%
+}
+
+.Most-popular .most .over-lay a {
+    color: inherit;
+    font-weight: 600;
+}
+
+.Most-popular .most .over-lay p {
+    color: #fff
+}
+
+
+/*end Most-popular*/
+
+
+/*start footer*/
+
+footer {
+    height: 610px;
+    width: 100%;
+    background: var(--c2);
+    padding-top: 100px;
+}
+
+footer h2 {
+    margin: 0 0 50px;
+    color: var(--c1)
+}
+
+footer .view {
+    height: 350px;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+footer .view::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    background: var(--c3);
+    width: 70%;
+    height: 100%;
+    transform: skew(-20deg) translateX(150px);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+footer .view .str {
+    width: 38%;
+    height: 100%;
+    padding: 30px;
+    color: var(--c1)
+}
+
+footer .view .form {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+
+footer .form .message textarea {
+    width: 100%;
+    height: 50px;
+    resize: none;
+}
+
+footer .form .send {
+    background: var(--c2);
+    color: var(--c1);
+}
+
+footer .form label {
+    color: var(--c2)
+}
+
+footer .copy-right {
+    background: vaR(--c1);
+    color: var(--c2);
+}
+
+footer .copy-right p {
+    line-height: 42px;
+}
+
+footer .share
+/*share*/
+
+{
+    position: relative;
+    margin: 6px;
+    padding: 0 10px;
+    background: transparent;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+footer .share:hover span:first-of-type {
+    opacity: 0;
+}
+
+footer .share:hover span:not(:first-of-type) {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+}
+
+footer .share span:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--c1);
+    letter-spacing: .7px;
+    font-size: 16px;
+    padding-top: 10px;
+    color: var(--c2);
+    text-align: center;
+    transition: .5s;
+    font-family: 'Bangers', cursive;
+}
+
+footer .share span:not(:first-of-type) {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: .5s;
+}
+
+footer .share span:nth-of-type(2) {
+    transform: translateX(174%);
+}
+
+footer .share span:nth-of-type(2):hover {
+    background: #17c5ec;
+}
+
+footer .share span:nth-of-type(2):hover a,
+footer .share span:nth-of-type(3):hover a,
+footer .share span:nth-of-type(4):hover a,
+footer .share span:nth-of-type(5):hover a {
+    color: #fff
+}
+
+footer .share span:nth-of-type(3) {
+    transform: translateX(50%);
+}
+
+footer .share span:nth-of-type(3):hover {
+    background: #3b5998;
+}
+
+footer .share span:nth-of-type(4) {
+    transform: translateX(-50%);
+}
+
+footer .share span:nth-of-type(4):hover {
+    background: #ea4335;
+}
+
+footer .share span:nth-of-type(5) {
+    transform: translateX(-150%);
+}
+
+footer .share span:nth-of-type(5):hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    transition: .5s;
+}
+
+footer .share span a {
+    color: var(--c2)
+}
+
+
+/*end footer*/
+
+
+/* nav drobdown */
+
+.drob-nav {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 15px;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--c1);
+    font-weight: 600;
+}
+
+.drob-nav:hover {
+    color: var(--c4);
+}

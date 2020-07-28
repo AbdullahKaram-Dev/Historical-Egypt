@@ -1,0 +1,345 @@
+            /* strat responsive */
+            
+            @media (max-width:767px)
+            /* extra small screen */
+            
+            {
+                body,
+                html {
+                    margin: 0;
+                }
+                .slider .again {
+                    width: 100%;
+                    border-bottom: none;
+                    border-right: none;
+                    background: url("../photo/iStock-804064162.jpg") no-repeat 72% 81%;
+                    position: static;
+                }
+                .slider .text {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #00000073;
+                }
+                .slider .text h1,
+                .slider .text p {
+                    color: var(--c1);
+                }
+                nav .navb {
+                    width: 100%;
+                    display: none;
+                    background-color: #2a363b;
+                }
+                nav .navb li {
+                    width: 100%;
+                    text-align: center;
+                }
+                nav .share {
+                    margin-left: 2rem;
+                }
+                .content .all .second .post.active,
+                .content .all .third .post-third.active,
+                .content .all .fourty .post-fourty.active {
+                    overflow: scroll;
+                }
+                .content .all .second .post .info,
+                .content .all .third .post-third .info-third,
+                .content .all .fourty .post-fourty .info-fourty {
+                    width: 100%;
+                }
+                .content .all .second .post .photo,
+                .content .all .third .post-third .photo-third,
+                .content .all .fourty .post-fourty .photo-fourty {
+                    width: 100%;
+                }
+                .content .all .present .one {
+                    margin-bottom: 50px;
+                    height: 800px;
+                }
+                .content .all .present .one .fixed,
+                .content .all .present .two .fixed {
+                    height: 800px;
+                    width: 100%;
+                    background-size: cover;
+                    z-index: 1;
+                }
+                .content .all .present .one .p,
+                .content .all .present .two .p {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background: #fff8f89c;
+                    overflow: scroll;
+                    height: 800px;
+                }
+                .content .all .present .two {
+                    height: 800px;
+                }
+                footer {
+                    position: static;
+                    height: auto;
+                    z-index: 0;
+                }
+                footer .view {
+                    height: auto
+                }
+                footer .view .str {
+                    width: 100%;
+                    text-align: center;
+                }
+                footer .view .form {
+                    width: 100%
+                }
+                footer .view::after {
+                    display: none;
+                }
+                footer .form .send {
+                    background: var(--c1);
+                    color: var(--c2);
+                }
+                footer .form label {
+                    color: var(--c3)
+                }
+                footer .copy-right p {
+                    text-align: center;
+                    float: none !important
+                }
+                footer .share {
+                    float: none !important;
+                    display: block;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+                .Most-popular {
+                    padding-bottom: 50px;
+                }
+                .Most-popular .most {
+                    height: auto
+                }
+                .pharaonic .container.all {
+                    padding: 0 20px;
+                }
+                .full-post h2 {
+                    margin-bottom: 50px
+                }
+                .full-post .post-book {
+                    margin: 0;
+                    height: 270px;
+                }
+                .full-post .post-book .cover .img {
+                    height: 270px
+                }
+                .full-post .post-book .cover .img .many-cover div.one,
+                .full-post .post-book .cover .backface .photo .control {
+                    padding: 10px 5px;
+                }
+                .full-post .post-book .cover .img .many-cover div.one h3,
+                .full-post .post-book .cover .backface .photo .control h3 {
+                    float: none !important;
+                    text-align: center;
+                }
+                .full-post .post-book .cover .img .many-cover div.one button,
+                .full-post .post-book .cover .backface .photo .control button {
+                    float: none !important;
+                    display: block;
+                    margin: 5px auto 0;
+                }
+                .full-post .post-book .cover .backface {
+                    height: 270px;
+                }
+                .full-post .post-book .page {
+                    bottom: 270px;
+                    padding: 10px;
+                }
+                .full-post .post-book .cover .backface,
+                .full-post .post-book .page,
+                .some-comment .carousel-inner .item p {
+                    overflow: scroll;
+                }
+                .full-post .more {
+                    margin-top: 50px;
+                }
+            }
+            
+            @media (min-width:768px) and (max-width:991px)
+            /* small screen */
+            
+            {
+                body,
+                html {
+                    margin: 0;
+                }
+                .slider .again {
+                    width: 100%;
+                    border-bottom: none;
+                    border-right: none;
+                    background: url("../photo/iStock-804064162.jpg") no-repeat 72% 81%;
+                    position: static;
+                }
+                .slider .text {
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: #00000073;
+                }
+                .slider .text h1,
+                .slider .text p {
+                    color: var(--c1);
+                }
+                nav .navb {
+                    width: 100%;
+                    display: none;
+                }
+                nav .navb li {
+                    width: 100%;
+                    text-align: center;
+                }
+                nav .share {
+                    margin-left: 30%;
+                }
+                .content .all .second .post.active,
+                .content .all .third .post-third.active,
+                .content .all .fourty .post-fourty.active {
+                    overflow: scroll;
+                }
+                .content .all .second .post .info,
+                .content .all .third .post-third .info-third,
+                .content .all .fourty .post-fourty .info-fourty {
+                    width: 100%;
+                }
+                .content .all .second .post .photo,
+                .content .all .third .post-third .photo-third,
+                .content .all .fourty .post-fourty .photo-fourty {
+                    width: 100%;
+                }
+                .content .all .present .one {
+                    margin-bottom: 50px;
+                    height: 800px;
+                }
+                .content .all .present .one .fixed,
+                .content .all .present .two .fixed {
+                    height: 800px;
+                    width: 100%;
+                    background-size: cover;
+                    z-index: 1;
+                }
+                .content .all .present .one .p,
+                .content .all .present .two .p {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    background: #fff8f89c;
+                    overflow: scroll;
+                    height: 800px;
+                }
+                .content .all .present .two {
+                    height: 800px;
+                }
+                footer {
+                    position: static;
+                    height: auto;
+                    z-index: 0;
+                }
+                footer .view {
+                    height: auto
+                }
+                footer .view .str {
+                    width: 100%;
+                    text-align: center;
+                }
+                footer .view .form {
+                    width: 100%
+                }
+                footer .view::after {
+                    display: none;
+                }
+                footer .form .send {
+                    background: var(--c1);
+                    color: var(--c2);
+                }
+                footer .form label {
+                    color: var(--c3)
+                }
+                footer .copy-right p {
+                    text-align: center;
+                    float: none !important
+                }
+                footer .share {
+                    float: none !important;
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }
+                .Most-popular {
+                    padding-bottom: 50px;
+                }
+                .Most-popular .most {
+                    height: 200px
+                }
+                .full-post h2 {
+                    margin-bottom: 80px
+                }
+                .full-post .post-book {
+                    margin: 0;
+                    height: 450px;
+                }
+                .full-post .post-book .cover .img {
+                    height: 450px
+                }
+                .full-post .post-book .cover .backface {
+                    height: 450px;
+                }
+                .full-post .post-book .page {
+                    bottom: 450px;
+                }
+                .full-post .post-book .cover .backface.scroll,
+                .full-post .post-book .page.scroll,
+                .some-comment .carousel-inner .item p {
+                    overflow: scroll;
+                }
+                .full-post .more {
+                    margin-top: 70px;
+                }
+            }
+            
+            @media (min-width:992px) and (max-width:1199px)
+            /* medium screen */
+            
+            {
+                .slider {
+                    height: 500px
+                }
+                .slider .again {
+                    border-bottom: 500px solid transparent;
+                    background: url("../photo/iStock-804064162.jpg") no-repeat 69% 48%;
+                }
+                nav .navb {
+                    display: block !important;
+                }
+                nav .share {
+                    margin-left: 70px;
+                }
+                .Most-popular .most {
+                    height: 200px
+                }
+                .full-post h2 {
+                    margin-bottom: 80px
+                }
+                .full-post .post-book {
+                    margin: 0 100px;
+                }
+            }
+            
+            @media (min-width:1200px)
+            /* large screen */
+            
+            {
+                nav .navb {
+                    display: block !important;
+                }
+            }
+            /* end responsive */

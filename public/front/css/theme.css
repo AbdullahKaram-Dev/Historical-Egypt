@@ -1,0 +1,27 @@
+:root {
+    --c1: #fffeb8;
+    --c2: #2a363b;
+    --c3: #fef4a1;
+    --c4: #ff5959;
+}
+
+
+/* preloder */
+
+.loader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fef4a1;
+    z-index: 1000;
+}
+
+
+/* 
+#ff5959
+#fd0054 */

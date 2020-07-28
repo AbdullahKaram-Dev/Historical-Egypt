@@ -1,0 +1,82 @@
+/*start pharaonic*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.pharaonic {
+    background: url("../photo/bg.jpg") no-repeat 0% 100% fixed;
+    margin-top: 63px
+}
+
+.pharaonic .container.all {
+    background: var(--c1);
+    padding: 0 50px;
+    width: 100% !important
+}
+
+.pharaonic .container h2 {
+    margin: 50px 0 70px;
+    color: var(--c2);
+}
+
+.pharaonic .container h2::before {
+    background: var(--c4)
+}
+
+.pharaonic .container .grid
+/*grid*/
+
+{
+    position: relative;
+}
+
+.pharaonic .container .grid .artical
+/*artical*/
+
+{
+    background: #fef4a1;
+    padding: 10px;
+    position: absolute;
+    outline: none;
+    transition: .3s;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.pharaonic .container .grid .artical:hover {
+    transform: translateY(-5px);
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    outline: 1px solid #FFEB3B;
+}
+
+.pharaonic .container .grid .artical img {
+    width: 100%;
+    max-width: 100%;
+    height: 265px;
+}
+
+.pharaonic .container .grid .artical h5 {
+    margin: 20px 0
+}
+
+.pharaonic .container .grid .artical h5 a {
+    color: var(--c2);
+    font-family: inherit;
+    font-weight: lighter;
+}
+
+.pharaonic .container .grid .artical p {
+    color: #000;
+    font-weight: lighter;
+}
+
+.pharaonic .Most-popular {
+    background: var(--c1)
+}
+
+
+/*end pharaonic*/
