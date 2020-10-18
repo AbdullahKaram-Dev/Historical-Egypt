@@ -93,13 +93,13 @@
         // end Coptic Route
         ///////////////////////////////////////////
         //Modern Route For AJAx
-        var url_modern = "{{route('likee.modern')}}"
-        var urll_modern = "{{route('dislike.modern')}}"
+        var url_modern = "{{route('likee.modern')}}";
+        var urll_modern = "{{route('dislike.modern')}}";
         // End Modern Route
         /////////////////////////////////////
         //pharaonic Route For AJAx
-        var url_pharaonic = "{{route('likee.pharaonic')}}"
-        var urll_pharaonic = "{{route('dislike.pharaonic')}}"
+        var url_pharaonic = "{{route('likee.pharaonic')}}";
+        var urll_pharaonic = "{{route('dislike.pharaonic')}}";
         // End pharaonic Route
         var token = "{{Session::token()}}";
     </script>

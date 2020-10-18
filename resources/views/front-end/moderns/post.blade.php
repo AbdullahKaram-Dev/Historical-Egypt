@@ -32,7 +32,7 @@
                     </div>
 
                     <div class="page"><!--page-->
-                        <p class="p-r"> {{$rows->post}}</p>
+                        <p class="p-r"> {!! $rows->post !!}</p>
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                                                 $UserData = \App\User::where('id',$comment->user_id)->get();
                                             @endphp
                                             @foreach($UserData as $User)
-                                            
+
                                             <li class="media" id="comment{{$comment->id}}">
                                                 <a class="pull-left" href="#">
                                                     <img class="media-object img-circle"

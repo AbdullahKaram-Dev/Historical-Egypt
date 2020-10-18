@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="page"><!--page-->
-                        <p class="p-r"> {{$rows->post}}</p>
+                        <p class="p-r"> {!! $rows->post !!}</p>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                                     <ul class="media-list ">
 
 
-                                        
+
 
 
                                         @php
@@ -122,9 +122,9 @@
                                             @php
                                                 $UserData = \App\User::where('id',$comment->user_id)->get();
                                             @endphp
-                                            
+
                                             @foreach($UserData as $User)
-                                            
+
                                             <li class="media" id="comment{{$comment->id}}">
                                                 <a class="pull-left" href="#">
                                                     <img class="media-object img-circle"
@@ -187,13 +187,13 @@
 
 
 
-                                                   
 
-                                                           
+
+
 
 
                                                         @foreach($replies->reverse() as $reply)
-                                                        
+
                                                          @php
                                                                 $UserData = \App\User::where('id',$reply->user_id)->get();
                                                             @endphp

@@ -37,8 +37,8 @@
                         <div class="most">
                             <img src="{{asset('uploads/'.$PopularCoptic->img)}}" alt="" class="img-responsive">
                             <div class="over-lay">
-                                <a href="{{url('/'.$title.'/post/'.$id = $PopularCoptic->id.'')}}"><h6 class="text-center">{{$PopularCoptic->title}}</h6></a>
-                                <a href="{{url('/'.$title.'/post/'.$id = $PopularCoptic->id.'')}}"><p class="text-center">{{$PopularCoptic->post}}</p></a>
+                                <a href="{{url('/'.$title.'/post/'.$id = $PopularCoptic->id.'')}}"><h6 class="text-center">{!! $PopularCoptic->title !!}</h6></a>
+                                <a href="{{url('/'.$title.'/post/'.$id = $PopularCoptic->id.'')}}"><p class="text-center">{!! $PopularCoptic->post !!}</p></a>
                             </div>
                         </div>
                     </div>

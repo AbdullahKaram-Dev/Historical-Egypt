@@ -26,7 +26,7 @@ class store extends FormRequest
         return [
             'title'=>['required' ,'between:5,190','string'],
             'post'=>['required','between:20,1000','string'],
-            'img'=> ['image','max:3000','required'],
+            'img'=> ['image','required'],
         ];
     }
 

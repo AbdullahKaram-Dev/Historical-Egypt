@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="page"><!--page-->
-                        <p class="p-r"> {{$rows->post}}</p>
+                        <p class="p-r"> {!! $rows->post !!}</p>
                     </div>
                 </div>
             </div>

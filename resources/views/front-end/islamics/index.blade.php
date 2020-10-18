@@ -40,8 +40,8 @@
                         <div class="most">
                             <img src="{{asset('uploads/'.$PopularIslamic->img)}}" alt="" class="img-responsive">
                             <div class="over-lay">
-                                <a href="{{url('/'.$title.'/post/'.$id = $PopularIslamic->id.'')}}"><h6 class="text-center">{{$PopularIslamic->title}}</h6></a>
-                                <a href="{{url('/'.$title.'/post/'.$id = $PopularIslamic->id.'')}}"><p class="text-center">{{$PopularIslamic->post}}</p></a>
+                                <a href="{{url('/'.$title.'/post/'.$id = $PopularIslamic->id.'')}}"><h6 class="text-center">{!! $PopularIslamic->title !!}</h6></a>
+                                <a href="{{url('/'.$title.'/post/'.$id = $PopularIslamic->id.'')}}"><p class="text-center">{!! $PopularIslamic->post !!}</p></a>
                             </div>
                         </div>
                     </div>

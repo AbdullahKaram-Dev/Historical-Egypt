@@ -43,8 +43,8 @@
                         <div class="most">
                             <img src="{{asset('uploads/'.$PopularPharaoh->img)}}" alt="" class="img-responsive">
                             <div class="over-lay">
-                                <a href="{{url('/'.$title.'/post/'.$id = $PopularPharaoh->id.'')}}"><h6 class="text-center">{{$PopularPharaoh->title}}</h6></a>
-                                <a href="{{url('/'.$title.'/post/'.$id = $PopularPharaoh->id.'')}}"><p class="text-center">{{$PopularPharaoh->post}}</p></a>
+                                <a href="{{url('/'.$title.'/post/'.$id = $PopularPharaoh->id.'')}}"><h6 class="text-center">{!! $PopularPharaoh->title !!}</h6></a>
+                                <a href="{{url('/'.$title.'/post/'.$id = $PopularPharaoh->id.'')}}"><p class="text-center">{!! $PopularPharaoh->post !!}</p></a>
                             </div>
                         </div>
                     </div>

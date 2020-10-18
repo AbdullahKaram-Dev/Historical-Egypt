@@ -36,7 +36,7 @@
 
                                 <div class="info pull-left">
                                     <h3 class="text-center">{{ $row->title }}</h3>
-                                    <p class="p-r">{{ $row->post }} </p>
+                                    <p class="p-r">{!! $row->post !!}</p>
                                 </div>
                                 <div class=" pull-left">
                                     <img class="photo" src="{{asset("uploads/$row->img")}}" alt="">
@@ -72,7 +72,7 @@
                                  id="i{{ $row->id }}"><!--post one-->
                                 <div class="info-third pull-left"><!--info-->
                                     <h3 class="text-center">{{ $row->title }}</h3>
-                                    <p class="p-r">{{ $row->post }} </p>
+                                    <p class="p-r">{!! $row->post !!}</p>
                                 </div>
                                 <div class=" pull-left">
                                     <img class="photo" src="{{asset("uploads/$row->img")}}" alt="">
@@ -110,7 +110,7 @@
                                  id="m{{ $row->id }}">
                                 <div class="info-fourty pull-left">
                                     <h3 class="text-center">{{ $row->title }}</h3>
-                                    <p class="p-r">{{ $row->post }}</p>
+                                    <p class="p-r">{!! $row->post !!}</p>
                                 </div>
                                 <div class=" pull-left">
                                     <img class="photo" src="{{asset("uploads/$row->img")}}" alt="">
@@ -148,7 +148,7 @@
                                  id="c{{ $row->id }}">
                                 <div class="info-fifth pull-left">
                                     <h3 class="text-center">{{ $row->title }}</h3>
-                                    <p class="p-r">{{ $row->post }} </p>
+                                    <p class="p-r">{!! $row->post !!}</p>
                                 </div>
                                 <div class=" pull-left">
                                     <img class="photo" src="{{asset("uploads/$row->img")}}" alt="">

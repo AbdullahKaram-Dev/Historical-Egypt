@@ -31,12 +31,10 @@ class Pharaonics extends BackEndController
         $requestArray = ['img' => $filename] + $request->all();
 
         $create = $this->model->create($requestArray);
-        if ($create) {
 
-            alert()->success('Added Successfully', 'Add Post Successfully');
+        alert()->success('Added Successfully', 'Add Post Successfully');
+        return redirect()->route('pharaonics.index');
 
-            return redirect()->route('pharaonics.index');
-        }
 
     }
 
@@ -64,13 +62,13 @@ class Pharaonics extends BackEndController
             $update = $row->update($requestArray);
             if ($update) {
 
-                alert()->success('Success Message', 'Updated Success Post: ' .$row->id. ' With OLdImage');
+                alert()->success('Success Message', 'Updated Success Post: ' . $row->id . ' With OLdImage');
 
                 return redirect()->route('pharaonics.index');
 
-            }else{
+            } else {
 
-                alert()->error('Failed Message', 'Failed To Update Post: ' .$row->id);
+                alert()->error('Failed Message', 'Failed To Update Post: ' . $row->id);
 
                 return redirect()->route('pharaonics.index');
             }
@@ -110,18 +108,20 @@ class Pharaonics extends BackEndController
         $title = "Single Post";
 
         $singlepost = Pharaonic::findOrFail($id);
-              return view('back-end.pharaonics.post' , compact('title' , 'singlepost'));
+
+        return view('back-end.pharaonics.post', compact('title', 'singlepost'));
 
 
     }
 
 
-    public function search(Request $request){
+    public function search(Request $request)
+    {
         $routeName = 'pharaonics';
         $title = $request->search;
         $rows = Pharaonic::where('title', 'like', '%' . $title . '%')->get();
 
-        return view('back-end.pharaonics.search' , compact('rows' , 'routeName'));
+        return view('back-end.pharaonics.search', compact('rows', 'routeName'));
     }
 
 
